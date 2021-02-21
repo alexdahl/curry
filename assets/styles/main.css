@@ -1,0 +1,132 @@
+:root {
+  --white:        white;
+  --gray-10:      #F2F2F2;
+  --gray-30:      #CCCCCC;
+  --gray-70:      #333333;
+  --gray-80:      #1A1A1A;
+  --gray-90:      #0D0D0D;
+  --black:        black;
+  --gold-light:   #FDDA9B;
+  --gold-dark:    #372300;
+
+  --text-color:         var(--gray-70);
+  --minor-color:        var(--gray-70);
+  --action-color:       var(--gold-dark);
+  --active-color:       var(--gold-dark);
+  --scrim-color:        hsla(42, 27%, 15%, 0.33);
+  --sheet-color:        var(--white);
+  --background-color:   var(--gold-light);
+
+  --header-height:      24rem;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  font-family: 'Montserrat', "Avenir Next", "Avenir", sans-serif;
+  font-weight: 300;
+  -webkit-text-size-adjust: none;
+  text-align: center;
+  color: var(--text-color);
+  background: var(--background-color);
+}
+
+h1, h2, h3 {
+  font-family: 'Teko', sans-serif;
+  text-transform: uppercase;
+}
+
+div {
+  box-sizing: border-box;
+}
+
+.clearfix {
+  clear: both;
+}
+
+header {
+  width: 100%;
+  height: var(--header-height);
+  text-align: center;
+  background: url('../images/hero.jpg') center;
+  background-size: cover;
+}
+
+h1 {
+  margin: 0;
+  padding: 4rem 0 0;
+  font-weight: 300;
+  text-align: center;
+}
+
+.container {
+  padding: 2rem 3rem;
+}
+
+h2 {
+  margin-top: 1em;
+  font-size: 1.4rem;
+  letter-spacing: 1px;
+}
+
+a {
+  color: var(--action-color);
+  text-decoration: none;
+  transition-property: color;
+  transition-duration: 0.08s;
+}
+
+a:hover,
+a:focus {
+  color: var(--active-color);
+}
+
+section {
+  padding: 2rem 0 0;
+}
+
+ul.social {
+  margin: 4rem 0 0;
+  padding: 1rem;
+  list-style-type: none;
+  text-align: center;
+}
+
+ul.social li {
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+ul.social li a {
+  display: block;
+  text-decoration: none;
+}
+
+ul.social li a img {
+  position: relative;
+  top: 3px;
+}
+
+footer {
+  margin-top: 4rem;
+  padding: 2rem 0;
+  color: var(--minor-color);
+  border-top: 1px solid var(--minor-color);
+  font-size: 0.8rem;
+}
+
+footer p {
+  margin: 0;
+}
+
+@media only screen and (min-width: 640px) {
+
+  h1 {
+  }
+
+  .container {
+    padding: 2rem 12rem;
+  }
+
+}
