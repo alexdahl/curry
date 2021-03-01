@@ -70,6 +70,12 @@ h2 {
   letter-spacing: 1px;
 }
 
+section p {
+  margin: 0 auto 1rem;
+  max-width: 50ch;
+  line-height: 1.5;
+}
+
 a {
   color: var(--action-color);
   text-decoration: none;
@@ -95,7 +101,7 @@ ul.social {
 
 ul.social li {
   display: inline-block;
-  margin-right: 1rem;
+  margin: 0 1rem 2rem;
 }
 
 ul.social li a {
@@ -106,6 +112,7 @@ ul.social li a {
 ul.social li a img {
   position: relative;
   top: 3px;
+  left: -1px;
 }
 
 footer {
